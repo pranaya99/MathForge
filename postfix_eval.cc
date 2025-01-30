@@ -1,8 +1,9 @@
+// Copyright 2025 Pranaya Rao Ganta
 #include <iostream>
 #include <sstream>
 #include <string>
 #include <cctype>
-#include "stack.h"
+#include "./stack.h"
 
 bool IsOperator(const std::string& token) {
   return token == "+" || token == "-" || token == "*" || token == "/";
@@ -20,7 +21,8 @@ double EvaluatePostfix(const std::string& expression) {
     } else if (IsOperator(token)) {
       // Perform operations
       if (stack.Size() < 2) {
-        throw std::invalid_argument("Invalid expression: insufficient operands");
+        throw std::invalid_argument(
+            "Invalid expression: insufficient operands");
       }
       double operand2 = stack.Pop();
       double operand1 = stack.Pop();

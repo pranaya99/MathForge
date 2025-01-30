@@ -1,5 +1,6 @@
-#ifndef STACK_H
-#define STACK_H
+// Copyright 2025 Pranaya Rao Ganta
+#ifndef STACK_H_
+#define STACK_H_
 
 #include <stdexcept>
 #include <vector>
@@ -20,10 +21,7 @@ class Stack {
     data.pop_back();
     return value;
   }
-
   bool IsEmpty() const { return data.empty(); }
-
   size_t Size() const { return data.size(); }
 };
-
-#endif  // STACK_H
+#endif  //  STACK_H_

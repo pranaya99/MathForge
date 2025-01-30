@@ -1,5 +1,6 @@
+// Copyright 2025 Pranaya Rao Ganta
 #include <gtest/gtest.h>
-#include "deque.h"
+#include "./deque.h"
 
 TEST(Deque, Empty) {
   Deque<int> dq;
@@ -18,7 +19,6 @@ TEST(Deque, PushBackPopBack) {
   dq.PopBack();  // Just call PopBack
   EXPECT_EQ(dq.Size(), 1);  // Check the size after PopBack
   EXPECT_EQ(dq.Back(), 1);  // Check the remaining element
-  
   dq.PopBack();  // Just call PopBack
   EXPECT_EQ(dq.Size(), 0);  // Check if the deque is empty now
   EXPECT_TRUE(dq.Empty());  // Check if the deque is empty
@@ -33,7 +33,6 @@ TEST(Deque, PushFrontPopFront) {
   dq.PopFront();  // Just call PopFront
   EXPECT_EQ(dq.Size(), 1);  // Check the size after PopFront
   EXPECT_EQ(dq.Front(), 1);  // Check the remaining element
-  
   dq.PopFront();  // Just call PopFront
   EXPECT_EQ(dq.Size(), 0);  // Check if the deque is empty now
   EXPECT_TRUE(dq.Empty());  // Check if the deque is empty
