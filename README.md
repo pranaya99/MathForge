@@ -10,20 +10,6 @@
 
 MathForge is a computational engine designed for high-performance mathematical expression evaluation and advanced data structure manipulation. Built from the ground up with custom implementations that outperform standard library containers in specific use cases.
 
-## Core Technologies
-
-**Expression Evaluation Engine** - Revolutionary postfix notation processor with zero-dependency stack implementation  
-**CircularDeque™** - Patent-pending circular buffer deque with O(1) operations at both ends  
-**Advanced Memory Management** - Custom allocators with dynamic resizing algorithms  
-**Enterprise-Grade Testing** - Comprehensive test suites using industry-standard frameworks
-
-## Performance Highlights
-
-- **Time Complexity**: O(1) amortized operations for all critical paths
-- **Memory Efficient**: Circular buffer eliminates memory fragmentation  
-- **Scalable**: Handles expressions from simple arithmetic to complex mathematical formulas
-- **Zero Dependencies**: Custom implementations eliminate external library overhead
-- **Production Ready**: Enterprise-level error handling and exception safety
 
 ## Architecture
 
@@ -41,7 +27,7 @@ MathForge is a computational engine designed for high-performance mathematical e
     └── test_deque.cc   
 ```
 
-## Build & Deploy
+## Build & Deploy - Postfix evaluator 
 
 ### Quick Start
 ```bash
@@ -55,7 +41,7 @@ make clean
 # Clone and build the entire engine
 make all
 
-### Real-Time Processing Examples
+## Real-Time Processing Examples
 ```bash
 $ ./postfix_eval
 > 15.7 23.4 * 2.1 /
@@ -88,6 +74,18 @@ $ cat test-case-1 | ./postfix_eval
 Bye!
 $
 
+
+
+```
+## Build & Deploy - Deque
+
+### Quick Start
+```bash
+./test_deque
+
+[==========] Running 3 tests from 1 test case.
+[  PASSED  ] 3 tests.
+
 ```
 
 ### Technical Specifications
@@ -105,27 +103,6 @@ $
 | Push Front/Back | O(1) amortized | O(n) worst case |
 | Random Access | O(1) | O(n) |
 | Memory Usage | Optimal | 60% overhead |
-
-### Benchmarking Results
-- **Expression Processing**: 10,000 calculations/second average throughput
-- **Memory Footprint**: 40% smaller than comparable implementations  
-- **Cache Efficiency**: 2x improved data locality through circular buffering
-
-## Testing Infrastructure
-
-### Comprehensive Test Coverage
-- **Unit Testing**: Google Test framework integration
-- **Performance Testing**: Automated benchmarking suites
-- **Stress Testing**: Large-scale data processing validation
-- **Memory Testing**: Leak detection and optimization verification
-
-
-## Technical Innovation
-
-### Custom Memory Management
-- **Smart Resizing**: Algorithmic capacity adjustment based on usage patterns
-- **Zero-Copy Operations**: Optimized data movement through circular indexing
-- **Exception Safety**: RAII patterns with strong exception guarantees
 
 
 ## Impact & Applications
