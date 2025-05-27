@@ -19,7 +19,7 @@ MathForge is a computational engine designed for high-performance mathematical e
 
 ## Performance Highlights
 
-- **Time Complexity **: O(1) amortized operations for all critical paths
+- **Time Complexity**: O(1) amortized operations for all critical paths
 - **Memory Efficient**: Circular buffer eliminates memory fragmentation  
 - **Scalable**: Handles expressions from simple arithmetic to complex mathematical formulas
 - **Zero Dependencies**: Custom implementations eliminate external library overhead
@@ -30,15 +30,15 @@ MathForge is a computational engine designed for high-performance mathematical e
 ```
 ├── Makefile                    # Advanced build system with optimization flags
 ├── README.md                  # This architecture overview
-├── PERFORMANCE_ANALYSIS.pdf   # Detailed benchmarking and complexity analysis
+├── report.pdf   # Detailed benchmarking and complexity analysis
 │
 ├── expression_engine/
-│   ├── postfix_evaluator.cc   # Core expression evaluation engine
-│   └── custom_stack.h         # High-performance stack implementation
+│   ├── postfix_eval.cc   # Core expression evaluation engine
+│   └── stack.h         # High-performance stack implementation
 │
 └── data_structures/
-    ├── circular_deque.h       # Revolutionary circular buffer deque
-    └── performance_tests.cc   # Comprehensive benchmarking suite
+    ├── deque.h       # Revolutionary circular buffer deque
+    └── test_deque.cc   
 ```
 
 ## Build & Deploy
