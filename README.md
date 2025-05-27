@@ -1,6 +1,5 @@
 # MathForge
 
-*High-performance expression evaluation engine with advanced data structure implementations*
 
 [![C++](https://img.shields.io/badge/C%2B%2B-11-blue.svg)](https://isocpp.org/)
 [![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com)
