@@ -8,7 +8,17 @@
 
 ## Project Vision
 
-MathForge is a computational engine designed for high-performance mathematical expression evaluation and advanced data structure manipulation. Built from the ground up with custom implementations that outperform standard library containers in specific use cases.
+During my ECS 36C course at UC Davis, my professor shared a memorable story:
+
+"My mum, a retired nuclear physicist, swore by her old HP calculator from the 1980s. It used Reverse Polish Notation (postfix)  a system that skips parentheses and relies entirely on the order of operations. It used to drive me crazy."
+That moment stuck with me not just because of the nostalgia, but because it revealed how postfix notation, while unintuitive at first, is elegantly simple for computers. No operator precedence, no parentheses just a stack and clean logic.
+
+So I decided to build MathForge as a personal project:
+
+A postfix expression evaluator built from the ground up in C++, with no standard stack or parsing shortcuts.
+A custom deque implemented using a circular buffer to meet strict performance constraints.
+A C++11 project that reflects real systems-level thinking.
+MathForge is a tribute to those quirky HP calculators — and a personal exercise in bringing low-level data structure theory to life through code.
 
 
 ## Architecture
