@@ -9,7 +9,7 @@
 
 ## Project Vision
 
-MathForge is a cutting-edge computational engine designed for high-performance mathematical expression evaluation and advanced data structure manipulation. Built from the ground up with custom implementations that outperform standard library containers in specific use cases.
+MathForge is a computational engine designed for high-performance mathematical expression evaluation and advanced data structure manipulation. Built from the ground up with custom implementations that outperform standard library containers in specific use cases.
 
 ## Core Technologies
 
